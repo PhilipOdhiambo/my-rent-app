@@ -12,23 +12,23 @@ export class RentService {
   }
   
  getProperties(){
-   return this.http.get("https://rent-management-app.herokuapp.com/properties");
+   return this.http.get("https://rent-management-api.herokuapp.com/properties");
  
  }
 
  getPropertiesById(id:string){
-  return this.http.get(`https://rent-management-app.herokuapp.com/properties/${id}`);
+  return this.http.get(`https://rent-management-api.herokuapp.com/properties/${id}`);
 
 }
 
  
  getTenants(){
-   return this.http.get("https://rent-management-app.herokuapp.com/tenants");
+   return this.http.get("https://rent-management-api.herokuapp.com/tenants");
  
  }  
  
  getPayments(){
-   return this.http.get("https://rent-management-app.herokuapp.com/payments");
+   return this.http.get("https://rent-management-api.herokuapp.com/payments");
  
  } 
 }

@@ -3,13 +3,14 @@
     <p>Description: {{description}}</p>
     <p>Location: {{location}}</p>
 
-    <div *ngIf="occupied">
-        <!-- <app-addpayment []><> -->
+    <div *ngIf="type=='false'">
+
+        <app-tenant [propertyId]="id"></app-tenant>
 
     </div>
 
-    <div *ngIf="!occupied">
-        <p>Add tenant</p>
+    <div *ngIf="type=='true'">
+        <app-payment></app-payment>
 
     </div>
 

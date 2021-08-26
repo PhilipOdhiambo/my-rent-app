@@ -13,12 +13,12 @@ export class PropertyDetailComponent implements OnInit {
   location:any;
   description:any;
   rent:any;
-  occupied: boolean;
+  type: any;
 
   constructor(private route : ActivatedRoute) {
     this.name = "";
     this.id = 0;
-    this.occupied = true;
+    this.type = "false";
    }
 
   ngOnInit(): void {
@@ -28,13 +28,8 @@ export class PropertyDetailComponent implements OnInit {
       this.location = param.get("location");
       this.description = param.get("description");
       this.rent = param.get("rent");
+      this.type = param.get("type");
 
-
-
-    
-
-
-      //this.property = params.get('myParam');
     })
   }
 
