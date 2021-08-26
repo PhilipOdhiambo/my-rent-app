@@ -24,7 +24,7 @@ export class RentService {
  
  getTenants(){
    return this.http.get("https://rent-management-api.herokuapp.com/tenants");
- 
+    
  }  
  
  getPayments(){

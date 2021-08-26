@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tenant',
@@ -16,7 +17,7 @@ export class TenantComponent implements OnInit {
 
 
 
-  constructor(private http:HttpClient) { 
+  constructor(private http:HttpClient, private router:Router) { 
   
   }
 
@@ -24,9 +25,6 @@ export class TenantComponent implements OnInit {
   }
 
   submit() {
-    console.log(this.phoneNumber);
-    console.log(this.name);
-    console.log(this.propertyId);
 
     const data = {
       phoneNumber: this.phoneNumber,
@@ -34,10 +32,21 @@ export class TenantComponent implements OnInit {
       propertyId: this.propertyId
     }
 
-    this.http.post(`https://rent-management-api.herokuapp.com/properties/new`,data).subscribe(res=> {
-      console.log(res);
+
+    this.http.post(`https://rent-management-api.herokuapp.com/tenants/new`,data)
+
+   //this.http.post<any>(`https://rent-management-api.herokuapp.com/properties/${this.propertyId}/update`,{type:"true"})
+
+   //this.http.post("https://rent-management-api.herokuapp.com/properties/" + this.propertyId + "/update",{type: "true"});
+
+   this.http.post<any>('https://rent-management-api.herokuapp.com/properties/' + this.propertyId + '/update', { type: 'true' }).subscribe(data => {
+        //this.postId = data.id;
     })
-    
+ 
+
+   
+
+    this.router.navigate(['/properties'])
     
   }
 

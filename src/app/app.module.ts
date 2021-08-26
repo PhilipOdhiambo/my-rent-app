@@ -9,6 +9,9 @@ import { PropertyComponent } from './property/property.component';
 import { PropertyDetailComponent } from './property-detail/property-detail.component';
 import { TenantComponent } from './tenant/tenant.component';
 import { PaymentComponent } from './payment/payment.component';
+import { NewPropertyComponent } from './new-property/new-property.component';
+import { TenantsComponent } from './tenants/tenants.component';
+import { TenantDetailComponent } from './tenant-detail/tenant-detail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { PaymentComponent } from './payment/payment.component';
     PropertyComponent,
     PropertyDetailComponent,
     TenantComponent,
-    PaymentComponent
+    PaymentComponent,
+    NewPropertyComponent,
+    TenantsComponent,
+    TenantDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class PropertyDetailComponent implements OnInit {
   property: any;
+  // get from tenants where propertyid = this.propertyid (return tenantId)
   name:any;
   id:any;
   location:any;

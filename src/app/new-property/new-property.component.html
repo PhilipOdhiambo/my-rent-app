@@ -1,0 +1,25 @@
+<form>
+    <div class="form-field">
+        <label for="">Property Name</label>
+        <input id="" [(ngModel)]="name" name="name" type="text">
+    </div>
+
+    <div class="form-field">
+        <label for="">Location</label>
+        <input [(ngModel)]="location" name="location" type="text">
+    </div>
+
+    <div class="form-field">
+        <label for="">Property Description:</label>
+        <input [(ngModel)]="description" name="description" type="text">
+    </div>
+
+    <div class="form-field">
+        <label for="">Rent Amount</label>
+        <input [(ngModel)]="rent" name="rent" type="text">
+    </div>
+
+
+
+    <button (click)="save()">Save</button>
+</form>

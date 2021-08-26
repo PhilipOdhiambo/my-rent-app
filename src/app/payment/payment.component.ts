@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-payment',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaymentComponent implements OnInit {
 
-  constructor() { }
+  @Input() propertyId:any
+
+  paidby:any
+  amount:any
+  propertyid:any
+  tenantid:any
+
+  constructor(private http:HttpClient) { }
 
   ngOnInit(): void {
+    
+
   }
 
 }

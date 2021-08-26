@@ -1,1 +1,19 @@
-<p>payment works!</p>
+<form>
+    <h2>Rent Payment</h2>
+    <div class="form-control">
+        <label for="">Property Id </label>
+        <input type="number" value="{{propertyId}}" readonly>
+    </div>
+    <div class="form-control">
+        <label for="">tenant Id</label>
+        <input type="number">
+    </div>
+    <div class="form-control">
+        <label for="">Amount</label>
+        <input [(ngModel)]="amount" name="amount" type="number">
+    </div>
+    <div class="form-control">
+        <label for="">Paid By</label>
+        <input [(ngModel)]="paidby" name="paidby" type="text">
+    </div>
+</form>
