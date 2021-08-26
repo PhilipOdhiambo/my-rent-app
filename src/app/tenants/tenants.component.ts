@@ -11,16 +11,15 @@ export class TenantsComponent implements OnInit {
 
   constructor(private rentservice:RentService) { }
 
-  // findTenants() {
-  //   this.rentservice.getProperties().subscribe(result => {
-  //     this.tenants = result;
-  //     console.log(this.tenants)
-  //   });
+  findTenants() {
+    this.rentservice.getTenants().subscribe(result => {
+      this.tenants = result;
+    });
 
-  // }
+  }
 
   ngOnInit(): void {
-    //this.findTenants();
+    this.findTenants();
   }
 
 }

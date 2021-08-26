@@ -11,7 +11,9 @@ const routes: Routes = [
   { path:'properties/new', component: NewPropertyComponent},
   { path:'properties/:id', component: PropertyDetailComponent},
   { path:'addtenant/', component: PropertyDetailComponent},
-  { path:'details/', component: TenantDetailComponent},
+  { path:'tenants', component: TenantsComponent},
+  { path:'tenants/:id', component: TenantDetailComponent},
+
 
   { path: '', redirectTo:"/properties", pathMatch:"full"}
 

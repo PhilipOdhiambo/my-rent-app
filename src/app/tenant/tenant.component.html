@@ -4,7 +4,7 @@
 
     <div class="formfield">
         <label class="form-label" for="tenant-name">PropertyId</label>
-        <input id="tenant-name" type="text" name="propertyId" readonly value="{{propertyId}}">
+        <input id="tenant-name" type="number" name="propertyId" readonly value="{{propertyId}}">
     </div>
 
     <div class="formfield">
@@ -14,7 +14,7 @@
 
     <div class="formfield">
         <label class="form-label" for="tenant-name">Phone Number:</label>
-        <input id="tenant-name" [(ngModel)]="phoneNumber"  name="phoneNumber" type="number">
+        <input id="tenant-name" [(ngModel)]="phoneNumber"  name="phoneNumber" type="text">
     </div>
     <button (click)="submit()">Submit</button>
 </form>

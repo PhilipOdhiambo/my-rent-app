@@ -1,9 +1,6 @@
-<!-- <div *ngFor="let property of properties">
-    <h2>rrtt</h2>
-    <a [routerLink]="['property', property]">view details</a>
-
-
-
-</div> -->
+<div *ngFor="let tenant of tenants">
+    <h2>{{tenant.name}}</h2>
+    <a [routerLink]="['tenant', tenant]">view details</a>
+</div>
 
 <a href="properties/new">Add new property</a>

@@ -29,24 +29,23 @@ export class TenantComponent implements OnInit {
     const data = {
       phoneNumber: this.phoneNumber,
       name: this.name,
-      propertyId: this.propertyId
+      propertyId: parseInt(this.propertyId)
+      
     }
 
+    console.log(data);
 
-    this.http.post(`https://rent-management-api.herokuapp.com/tenants/new`,data)
+    this.http.post<any>(`https://rent-management-api.herokuapp.com/tenants/new`,data).subscribe(data => {
 
-   //this.http.post<any>(`https://rent-management-api.herokuapp.com/properties/${this.propertyId}/update`,{type:"true"})
+    });
 
-   //this.http.post("https://rent-management-api.herokuapp.com/properties/" + this.propertyId + "/update",{type: "true"});
+    
 
-   this.http.post<any>('https://rent-management-api.herokuapp.com/properties/' + this.propertyId + '/update', { type: 'true' }).subscribe(data => {
-        //this.postId = data.id;
-    })
- 
+    this.http.post<any>(`https://rent-management-api.herokuapp.com/properties/${this.propertyId}/update`,{type:"true"}).subscribe(data => {
 
-   
+    });
 
-    this.router.navigate(['/properties'])
+    this.router.navigate(['/properties']);
     
   }
 
