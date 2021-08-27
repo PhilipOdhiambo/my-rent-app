@@ -1,0 +1,17 @@
+.form {
+    width: 50%;
+    margin: auto;
+    margin-top: 3%;
+    border: 1px solid green;
+    padding: 5%;
+    background-color: whitesmoke;
+    
+}
+
+.btns {
+    padding-top: 3%;
+}
+
+input.form-control {
+    background:transparent;
+}

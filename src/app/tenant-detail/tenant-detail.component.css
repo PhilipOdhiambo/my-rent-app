@@ -8,4 +8,8 @@
 .form {
     width: 50%;
     margin: auto;
+    border: 1px solid green;
+    padding: 3%;
+    margin-top: 2%;
+
 }

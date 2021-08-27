@@ -1,25 +1,28 @@
-<form>
-    <div class="form-field">
-        <label for="">Property Name</label>
-        <input id="" [(ngModel)]="name" name="name" type="text">
+<form class="form">
+    <h3 class="text-center">Add new Property</h3>
+    <div class="form-group">
+        <label class="form-label" for="">Property Name</label>
+        <input class="form-control" id="" [(ngModel)]="name" name="name" type="text">
     </div>
 
-    <div class="form-field">
+    <div class="form-group">
         <label for="">Location</label>
-        <input [(ngModel)]="location" name="location" type="text">
+        <input class="form-control" [(ngModel)]="location" name="location" type="text">
     </div>
 
-    <div class="form-field">
+    <div class="form-group">
         <label for="">Property Description:</label>
-        <input [(ngModel)]="description" name="description" type="text">
+        <input class="form-control" [(ngModel)]="description" name="description" type="text">
     </div>
 
-    <div class="form-field">
+    <div class="form-group">
         <label for="">Rent Amount</label>
-        <input [(ngModel)]="rent" name="rent" type="text">
+        <input class="form-control" [(ngModel)]="rent" name="rent" type="text">
     </div>
 
+    <div class="btns"><button  class="form-control btn btn-outline-success" (click)="save()">Save</button></div>
 
 
-    <button (click)="save()">Save</button>
+
+    
 </form>

@@ -12,6 +12,7 @@ import { PaymentComponent } from './payment/payment.component';
 import { NewPropertyComponent } from './new-property/new-property.component';
 import { TenantsComponent } from './tenants/tenants.component';
 import { TenantDetailComponent } from './tenant-detail/tenant-detail.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TenantDetailComponent } from './tenant-detail/tenant-detail.component';
     PaymentComponent,
     NewPropertyComponent,
     TenantsComponent,
-    TenantDetailComponent
+    TenantDetailComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,

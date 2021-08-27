@@ -8,24 +8,27 @@
 
     <form class="form">
         <h2>Rent Payment</h2>
-        <div class="form-field">
+        <div class="form-group">
             <label for="">Property Id </label>
-            <input  class="form-field" type="number" value="{{propertyId}}" readonly>
+            <input  class="form-control" type="number" value="{{propertyId}}" readonly>
         </div>
-        <div class="form-field">
+        <div class="form-group">
             <label for="">tenant Id</label>
-            <input  class="form-field" type="number" value="{{id}}">
+            <input  class="form-control" type="number" value="{{id}}">
         </div>
-        <div class="form-control">
+        <div class="form-group">
             <label for="">Amount</label>
-            <input  class="form-field" [(ngModel)]="amount" name="amount" type="number">
+            <input  class="form-control" [(ngModel)]="amount" name="amount" type="number">
         </div>
-        <div class="form-control">
+        <div class="form-group">
             <label for="">Paid By</label>
-            <input  class="form-field" [(ngModel)]="paidby" name="paidby" type="text">
+            <input  class="form-control" [(ngModel)]="paidby" name="paidby" type="text">
+        </div>
+        <div>
+            <button class=" form-control btn btn-outline-success" (click)="save()">Save</button>
         </div>
 
-        <button (click)="save()">Save</button>
+       
     </form>
 
 

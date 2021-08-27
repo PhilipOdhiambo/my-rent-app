@@ -7,12 +7,12 @@ import { TenantDetailComponent } from './tenant-detail/tenant-detail.component';
 import { TenantsComponent } from './tenants/tenants.component';
 
 const routes: Routes = [
-  { path:'/properties', component: PropertyComponent},
-  { path:'/properties/new', component: NewPropertyComponent},
-  { path:'/properties/:id', component: PropertyDetailComponent},
-  { path:'/addtenant/', component: PropertyDetailComponent},
-  { path:'/tenants', component: TenantsComponent},
-  { path:'/tenants/:id', component: TenantDetailComponent},
+  { path:'properties', component: PropertyComponent},
+  { path:'properties/new', component: NewPropertyComponent},
+  { path:'properties/:id', component: PropertyDetailComponent},
+  { path:'addtenant/', component: PropertyDetailComponent},
+  { path:'tenants', component: TenantsComponent},
+  { path:'tenants/:id', component: TenantDetailComponent},
 
 
   { path: '', redirectTo:"/properties", pathMatch:"full"}

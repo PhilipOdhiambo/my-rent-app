@@ -1,20 +1,23 @@
 
 <form #myForm="ngForm" class="form">
-    <h3>Add new Tenant</h3>
+    <h3 class="text-center">Add new Tenant</h3>
 
-    <div class="formfield">
+    <div class="form-group">
         <label class="form-label" for="tenant-name">PropertyId</label>
-        <input id="tenant-name" type="number" name="propertyId" readonly value="{{propertyId}}">
+        <input class="form-control" id="tenant-name" type="number" name="propertyId" readonly value="{{propertyId}}">
     </div>
 
-    <div class="formfield">
+    <div class="form-group">
         <label class="form-label" for="tenant-name">Name</label>
-        <input id="tenant-name" [(ngModel)]="name" name="name" type="text">
+        <input class="form-control" id="tenant-name" [(ngModel)]="name" name="name" type="text">
     </div>
 
-    <div class="formfield">
+    <div class="form-group">
         <label class="form-label" for="tenant-name">Phone Number:</label>
-        <input id="tenant-name" [(ngModel)]="phoneNumber"  name="phoneNumber" type="text">
+        <input class="form-control" id="tenant-name" [(ngModel)]="phoneNumber"  name="phoneNumber" type="text">
     </div>
-    <button (click)="submit()">Submit</button>
+    <div class="btns">
+        <button class="form-control btn btn-outline-success" (click)="submit()">Submit</button>
+    </div>
+  
 </form>
