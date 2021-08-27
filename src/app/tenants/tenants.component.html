@@ -1,6 +1,20 @@
-<div *ngFor="let tenant of tenants">
-    <h2>{{tenant.name}}</h2>
-    <a [routerLink]="['tenant', tenant]">view details</a>
-</div>
 
-<a href="properties/new">Add new property</a>
+
+<div class="form">
+    <h2 class="text-center text-success">List of Tenants</h2>
+
+    <table class="table table-striped">
+        <thead>
+            <th>Tenant Name</th>
+            <th>Tenant details</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let tenant of tenants">
+                <td>{{tenant.name}}</td>
+                <td><a [routerLink]="['tenant', tenant]">view/ Receive Rent</a></td>
+
+            </tr>
+        </tbody>
+    </table>
+
+</div>

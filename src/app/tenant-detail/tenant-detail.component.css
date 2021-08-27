@@ -1,0 +1,11 @@
+.details {
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    border: 1px solid green;
+    padding: 5%;
+}
+.form {
+    width: 50%;
+    margin: auto;
+}

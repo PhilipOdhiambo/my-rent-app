@@ -1,24 +1,28 @@
 <div>
-    <h2>{{name}}</h2>
-    <h2>{{phoneNumber}}</h2>
+    <div class="details">
+        <h2>Tenant Name: {{name}}</h2>
+        <h6>Phone Number: {{phoneNumber}}</h6>
 
-    <form>
+    </div>
+
+
+    <form class="form">
         <h2>Rent Payment</h2>
-        <div class="form-control">
+        <div class="form-field">
             <label for="">Property Id </label>
-            <input type="number" value="{{propertyId}}" readonly>
+            <input  class="form-field" type="number" value="{{propertyId}}" readonly>
         </div>
-        <div class="form-control">
+        <div class="form-field">
             <label for="">tenant Id</label>
-            <input type="number" value="{{id}}">
+            <input  class="form-field" type="number" value="{{id}}">
         </div>
         <div class="form-control">
             <label for="">Amount</label>
-            <input [(ngModel)]="amount" name="amount" type="number">
+            <input  class="form-field" [(ngModel)]="amount" name="amount" type="number">
         </div>
         <div class="form-control">
             <label for="">Paid By</label>
-            <input [(ngModel)]="paidby" name="paidby" type="text">
+            <input  class="form-field" [(ngModel)]="paidby" name="paidby" type="text">
         </div>
 
         <button (click)="save()">Save</button>

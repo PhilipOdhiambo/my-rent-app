@@ -1,15 +1,16 @@
-<div>
+<div class="form">
     <h2>Property name: {{name}}</h2>
     <p>Description: {{description}}</p>
     <p>Location: {{location}}</p>
+    <p>Rent: Ksh {{rent}}</p>
+      
+
+
 
     <div *ngIf="type=='false'">
 
         <app-tenant [propertyId]="id"></app-tenant>
 
     </div>
-
-
-
 
 </div>
